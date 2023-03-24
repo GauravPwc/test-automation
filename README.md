@@ -57,7 +57,7 @@ To set up this framework, two mandatory softwares need to be installed into the 
  * To install maven into the system, execute `$ brew install maven` on terminal
  * [Install Visual Studio Code](https://code.visualstudio.com/docs/setup/mac)
 
-* [Jenkins Setup](https://digit-discuss.atlassian.net/wiki/spaces/EPE/pages/1620934657/Jenkins+Setup+Tutorial+for+Automation)
+* [Jenkins Setup](https://upyog-docs.gitbook.io/upyog-v-1.0/upyog-1/platform/configure-upyog/qa-automation/jenkins-setup-for-automation)
  
 <!--Clone Project-->
 ## Clone Project

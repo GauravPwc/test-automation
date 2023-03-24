@@ -1,4 +1,4 @@
-# DIGIT Test Automation Framework Setup guide
+# UPYOG Test Automation Framework Setup guide
 ## Table of Contents
 * [About the Project](#about-the-project)
   * [Technology Used](#technology-used)
@@ -14,7 +14,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-DIGIT Test Automation framework majorly deals with various API services validation. It enables to test and validate back end services across all active environments and as well as tenant ids. For more details on framework architecture please refer the [documentation](https://digit-discuss.atlassian.net/wiki/spaces/EPE/pages/1028521985/Automation+Framework+Knowledge+Base). For guide on Kafka Producer Consumer approach, please refer to [documentation](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/1540587710/Kafka+Consumer+Producer+Approach)
+UPYOG Test Automation framework majorly deals with various API services validation. It enables to test and validate back end services across all active environments and as well as tenant ids. For more details on framework architecture please refer the [documentation](https://upyog-docs.gitbook.io/upyog-v-1.0/upyog-1/platform/configure-upyog/qa-automation/automation-framework-knowledge-base). For guide on Kafka Producer Consumer approach, please refer to [documentation](https://upyog-docs.gitbook.io/upyog-v-1.0/upyog-1/platform/configure-upyog/qa-automation/kafka-consumer-producer-approach)
  
 <!-- Technology Used -->
 ## Technology Used
@@ -45,26 +45,28 @@ This framework requires below prerequisites to be covered
 <!-- Prerequisites --> 
 ## Prerequisites
 To set up this framework, two mandatory softwares need to be installed into the system. Follow below step by step setup guidelines.
+
  ### On Windows
  * [Download JDK 8](https://www.oracle.com/in/java/technologies/javase/javase-jdk8-downloads.html)
  * [Download maven 3.6.3](https://maven.apache.org/download.cgi)
  * [JDK Installation Guide](https://docs.oracle.com/en/java/javase/11/install/installation-jdk-microsoft-windows-platforms.html#GUID-DAF345BA-B3E7-4CF2-B87A-B6662D691840)
  * [maven Installation Guide](https://maven.apache.org/install.html)
  * [Install Visual Studio Code](https://code.visualstudio.com/docs/setup/windows)
+
 ### On Mac
  * First install [HomeBrew](https://brew.sh/)
  * To install OpenJDK 8 with brew, execute `$ brew cask install adoptopenjdk8` on terminal
  * To install maven into the system, execute `$ brew install maven` on terminal
  * [Install Visual Studio Code](https://code.visualstudio.com/docs/setup/mac)
 
-* [Jenkins Setup](https://digit-discuss.atlassian.net/wiki/spaces/EPE/pages/1620934657/Jenkins+Setup+Tutorial+for+Automation)
+* [Jenkins Setup](https://upyog-docs.gitbook.io/upyog-v-1.0/upyog-1/platform/configure-upyog/qa-automation/jenkins-setup-for-automation)
  
 <!--Clone Project-->
 ## Clone Project
 To clone the framework to your local, please follow the below step.
 * Open [git bash](https://git-scm.com/downloads) or any other terminal and execute the below command to clone the project repository in the system
 ```
-git clone https://github.com/egovernments/test-automation.git
+git clone https://github.com/upyog/test-automation.git
 ```
 
 <!--Configurations-->
@@ -78,10 +80,12 @@ git clone https://github.com/egovernments/test-automation.git
   * Currently kafka related testcases will not run as we are waiting for the latest version of the tool to be releases officially.
    
   ### Project Level 
+  
    Environment configuration files needs to be created in `local` by following below steps.
    * Create environment specific files with `.yaml` extension anywhere in the local directory 
    * It is recommended to provide environment specific names to the files (like: `qa.yaml`, `uat.yaml`, `config.yaml` etc.) 
    * Please keep the environment specific data in the config file as per below format.  
+
    #### For example
    ```yaml
     host: <Host URL goes here>

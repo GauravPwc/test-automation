@@ -1,1 +1,1 @@
-This is a new file adding to the eGov_UI_Automation repo
+This is a new file adding to the UI_Automation repo
